@@ -1,0 +1,213 @@
+
+.goods_list{
+    width: 100%;
+    margin-top: 16px;
+    
+}
+
+.goods_list_main{
+    width: 1200px;
+    margin: 0 auto;
+   
+    overflow: hidden;
+}
+
+.goods_list_main>ul{
+    width: 1216px;
+    overflow: hidden;
+}
+
+
+
+.hproduct{
+    padding: 0 24px 21px;
+    float: left;
+    position: relative;
+    width: 238px;
+    height: 468px;
+    margin: 0 16px 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #eee;
+    color: #333;
+}
+
+.hproduct .category_cover{
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin: 40px 0;
+}
+
+.hproduct .category_cover>img{
+    width: 240px;
+    height: 240px;
+}
+
+.hproduct .sku_tag{
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+.hproduct .ft_message{
+    font-size: 18px;
+    height: 27px;
+}
+
+.hproduct .ft_message .price_new .price{
+    color: #f60;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hproduct .ft_message .price_new em{
+    margin-left: 4px;
+}
+
+.hproduct .ft_message .right_tip{
+    float: right;
+    font-size: 12px;
+    line-height: 27px;
+    color: #999;
+}
+
+.hproduct .fn{
+    display: block;
+    max-height: 42px;
+    font-size: 14px;
+    overflow: hidden;
+    word-break: break-all;
+    margin: 8px auto 0;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.hproduct .fn:hover{
+    color: #0093d5;
+}
+
+.hproduct .sell_point{
+    color: #999;
+    font-size: 12px;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hproduct .act_tag .self_tag{
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 1px 4px;
+    font-size: 12px;
+    border: 1px solid #f60;
+    border-radius: 2px;
+    color: #f60;
+}
+
+.hproduct .act_tag .icon_coupon_3{
+    overflow: hidden;
+    margin-left: -2px;
+    margin-top: 2px;
+    display: inline-block;
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.hproduct .act_tag .icon_coupon_3 .text {
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 0px;
+    color: #fff;
+    background-color: #f60;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+    
+}
+
+.hproduct .item_compare{
+    overflow: hidden;
+    margin: 13px auto 0;
+    font-size: 12px;
+    position: absolute;
+    width: 238px;
+    bottom: 21px;
+    left: 24px;
+}
+
+.hproduct .item_compare .js_add_to_cart{
+    float: left;
+    cursor: pointer;
+    font-size: 12px; 
+}
+
+.hproduct .item_compare .js_add_to_cart:hover .cart_icon{
+    background-position: -12px -33px;
+}
+
+.hproduct .item_compare .js_add_to_cart .cart_icon{
+    width: 18px;
+    height: 18px;
+    background: url(../images/item_compare.png) no-repeat;
+    background-size: 100px 100px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-position: -39px -33px;
+}
+
+.hproduct .item_compare .js_add_to_cart >span{
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.hproduct .item_compare .js_compare_icon{
+    float: right;
+}
+
+.hproduct .item_compare .js_compare_icon .compare_icon{
+    width: 18px;
+    height: 18px;
+    background: url(//img.mdcdn.cn/wp/src/p_mall/img/item_compare.png) no-repeat;
+    background-size: 100px 100px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-position: -12px -9px;
+    vertical-align: middle;
+}
+
+.hproduct .item_compare .js_compare_icon>span{
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+

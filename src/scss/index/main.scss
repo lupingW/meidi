@@ -1,0 +1,480 @@
+.content_out{
+    width: 100%;
+    background: #fff;
+}
+
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.content .star{
+    height: 188px;
+    width: 100%;
+
+}
+
+.content .star>h2{
+    height: 68px;
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    
+    background: url(../images/index_title_sprite.png) no-repeat;
+    background-size: 160px 115px;
+}
+
+.star_floor1{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+
+.floo1_left{
+    width: 600px;
+    height: 680px;
+    display: block;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.floo1_left>img{
+    width: 500px;
+    height: 590px;
+    margin: 35px 50px 10px;
+    transition: all .2s ease-in;
+    
+}
+
+.floo1_left:hover >img{
+    margin-top: 25px;
+}
+
+.floo1_left{
+    text-align: center;
+    color: #666;
+}
+
+.floo1_left>div{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    width: 100%;
+}
+
+.floo1_left:hover>div{
+    color: #f10;
+    
+}
+.floor1_right{
+    width: 600px;
+    height: 680px; 
+    
+}
+.floor1_right>a{
+    display: block;
+    width: 300px;
+    height: 340px;
+    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+}
+.floor1_right .top_l>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor1_right .top_l:hover>img{
+    margin-top: 30px;
+}
+.floor1_right .top_l .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .top_l .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .top_l:hover span{color: #f10;}
+
+//top_r 的样式 start
+.floor1_right .top_r>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor1_right .top_r:hover>img{
+    margin-top: 30px;
+}
+.floor1_right .top_r .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .top_r .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .top_r:hover span{color: #f10;}
+// top_r 的样式 end
+
+// bottom_l start
+.floor1_right .bottom_l>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor1_right .bottom_l:hover>img{
+    margin-top: 30px;
+}
+.floor1_right .bottom_l .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .bottom_l .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .bottom_l:hover span{color: #f10;}
+// bottom_l end
+
+// bottom_r start
+.floor1_right .bottom_r>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor1_right .bottom_r:hover>img{
+    margin-top: 30px;
+}
+.floor1_right .bottom_r .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .bottom_r .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor1_right .bottom_r:hover span{color: #f10;}
+// bottom_r end
+// 明星单品楼层一 end
+
+
+// 明星单品楼层二 start
+    // floor2_left start
+.star_floor2{
+    width: 1200px;
+    height: 680px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-top:none; 
+}
+.star_floor2>div{
+    float: left;
+    width: 600px;
+    height: 680px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.floor2_left .top{
+    width: 600px;
+    height: 336px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    box-sizing: border-box;
+}
+.floor2_left .top>img{
+    width: 540px;
+    height: 280px;
+    margin: 28px 30px;
+    display: block;
+    transition: all .2s ease-in;
+}
+.floor2_left .top>span{
+    position: absolute;
+    bottom: 90px;
+    left: 35px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    color: #333;
+    margin-top: 12px;
+    text-align: center;
+}
+.floor2_left .top:hover>img{
+    margin-top: 23px;
+
+}
+.floor2_left .top:hover .price{
+    color:#f10;
+}
+
+.floor2_left .bottom_left{
+    position: relative;
+    height: 344px;
+    width: 300px;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.floor2_left .bottom_left>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor2_left .bottom_left:hover>img{
+    margin-top: 30px;
+}
+.floor2_left .bottom_left .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor2_left .bottom_left .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor2_left .bottom_left:hover span{color: #f10;}
+
+
+.floor2_left .bottom_right{
+    position: relative;
+    height: 344px;
+    width: 300px;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.floor2_left .bottom_right>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 35px 50px 40px;
+    transition: all .2s ease-in;
+}
+.floor2_left .bottom_right:hover>img{
+    margin-top: 30px;
+}
+.floor2_left .bottom_right .title{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    bottom: 50px;
+    width: 100%;
+    color: #333;
+}
+.floor2_left .bottom_right .price{
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    bottom: 25px;
+    width: 100%;
+    color: #333;
+}
+.floor2_left .bottom_right:hover span{color: #f10;}
+.floor2_left .bottom_right>div{
+    background-color: #ff6600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 20px;
+    z-index: 10;
+    min-width: 50px;
+    text-align: center;
+}
+    // floor2_left end
+
+
+    // floor2_left start
+.floor2_right{
+    width: 600px;
+    height: 680px;
+    display: block;
+    border-top: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.floor2_right>img{
+    width: 500px;
+    height: 590px;
+    margin: 35px 50px 10px;
+    transition: all .2s ease-in;
+    
+}
+
+.floor2_right:hover >img{
+    margin-top: 25px;
+}
+
+.floor2_right{
+    text-align: center;
+    color: #666;
+}
+
+.floor2_right>div{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    width: 100%;
+}
+
+.floor2_right:hover>div{
+    color: #f10;
+    
+}
+
+    // floor2_left end
+
+// 明星单品楼层二 end
+
+
+// 会员专区 start
+.vip{
+    height: 191px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vip>h2{
+    width: 160px;
+    height: 39px;
+    margin: 80px 520px 20px;
+    background: url(../images/index_title_sprite.png) 0 -75px;
+    background-size: 160px 115px;
+}
+
+.vip>a{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #999;
+    width: 100%;
+}
+
+.vip>a:hover{
+    color: #f10;
+}
+// 会员专区 end
+
+// 会员福利 start
+.vip_boon{
+    width: 1200px;
+    height: 420px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 120px;
+}
+
+.vip_boon>a{
+    display: block;
+    border-right: 1px solid #e0e0e0;
+    width: 300px;
+    height: 420px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.vip_boon .vip_boon_item4{border: none;}
+
+.vip_boon>a>img{
+    width: 200px;
+    height: 300px;
+    margin: 30px 50px 10px;
+    transition: all .2s ease-in;
+}
+.vip_boon>a:hover>img{
+    margin-top:20px; 
+    
+}
+.vip_boon>a>div{
+    display: block;
+    width: 118px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    position: absolute;
+    left: 90px;
+    bottom: 30px;
+}
+.vip_boon>a>div:hover{
+    background: #f3f3f3;
+}
+// 会员福利 start

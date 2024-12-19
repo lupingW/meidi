@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美的，中国家电行业领导者</title>
+    <link rel="stylesheet" href="./stylesheets/login.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo left">
+            <a href="./index.html"></a>
+        </div>
+    </div>
+    <div class="login_main">
+        <div class="login_content">
+            <div class="login">
+                <img src="./images/81eecc43e29f.jpg" alt="">
+                <div id="login">
+                    <div class="login_way_tit">
+                        使用合作账号登陆
+                    </div>
+                    <a class="QQ_login" href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=101165547&redirect_uri=https%3A%2F%2Fw.midea.com%2Fnext%2Fuserinfo%2Fqqcodecallback%3Frurl%3Dhttps%253A%252F%252Fwww.midea.cn%252Fmy%252Findex%253Fmtag%253D40005.1.9&response_type=code&scope=get_user_info&state=web_qq"></a>
+                    <a class="wechat" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxa4f9e92f41ee520c&redirect_uri=https%3A%2F%2Fw.midea.com%2Fnext%2Fuserinfo%2Fweixincodecallback%3Frurl%3Dhttps%253A%252F%252Fwww.midea.cn%252Fmy%252Findex%253Fmtag%253D40005.1.9&response_type=code&scope=snsapi_login&state=web_wx#wechat_redirect" class="wechat"></a>
+                    <div class="login_type1">
+                        
+                        <form action="http://zhaoyx0907.com/users/login.do" method="GET">
+                            <div class="login_from_til">
+                                        帐号密码登录
+                            </div>
+                            
+                            <input type="text" class="type1_accounts" placeholder="手机号" name="username">
+                             <p class="type1_accounts_p">请输入正确的手机号</p>
+                            <input type="password" class="type1_password" placeholder="密码" name="password">
+                            <p class="type1_password_p">密码长度必须为6到20位之间</p>
+                            <button type="button" class="type1_btn">登录</button>
+                            <div class="login_links">
+                                <span class="msg_login">
+                                    短信验证登录
+                                </span>
+                                <i class="line">|</i>
+                                <span class="msg_logins">
+                                    注册
+                                </span>
+                                <span class="forget_pwd right">
+                                  <a href="https://www.midea.cn/login/find_password">找回密码</a>  
+                                </span>
+                            </div>
+                            <!-- 历史账号预留位置 -->
+                            <ul id=cookie_accounts>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="login_type2">
+                        <form action="./PHP/register.php" method="POST">
+                            <div class="login_from_til2">
+                                        短信验证码登录
+                            </div>
+                            
+                            <a class="getcode" href="javascript:">获取验证码</a>
+                           
+                            <input type="text" class="type2_accounts" placeholder="手机号">
+                            
+                            <p class="type2_accounts_p">请输入正确的手机号</p>
+                           
+                            <input type="text" class="type2_password" placeholder="短信验证码">
+                           
+                            <p class="type2_password_p">请输入正确的验证码</p>
+                           
+                            <button class="type2_btn">登录</button>
+                           
+                            <div class="login_links">
+                                <span class="msg_login2">
+                                    帐号密码登录
+                                </span>
+                                <i class="line">|</i>
+                                <span class="msg_logins">
+                                    注册
+                                </span>
+                                <span class="forget_pwd right">
+                                  <a href="https://www.midea.cn/login/find_password">找回密码</a>  
+                                </span>
+                            </div>
+                            <!-- 历史账号预留位置 -->
+                            <ul id=cookie_accounts2>
+                               
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                
+
+                <!-- 注册开始 -->
+                <div id="login_register">
+                    <div class="login_register_tit">使用手机号注册</div>
+                    <form action="http://zhaoyx0907.com/users/register.do" method="POST" >
+                        <input type="text" class="phone_login" placeholder="请输入你的手机号" name="username">
+                        <p class="phone_login_warn"></p>
+                        
+                        <input type="password" class="set_pwd" placeholder="请设置你的密码" name="password">
+                        <p class="set_pwd_warn"></p>
+                
+                        <input type="password" class="affirm_pwd" placeholder="请确认你的密码">
+                        <p class="affirm_pwd_warn"></p>
+
+                        <div class="placeholder">
+                                密码长度必须在8位以上，含大小写字母、数字、符号至少三种
+                        </div>
+
+                        <div class="login_from_row">
+                            
+                          
+                            
+                            <i class="active"></i>
+                            <span>同意</span>
+                            <p class="iii"></p>
+                            <a href="https://www.midea.cn/act/help_center_new/transaction_terms?id=232&parentId=1" target="_blank">《美的官方商城用户注册协议》</a>
+                        </div>
+                       
+                        <button type="button" class="login_register_btn">注册</button>
+                        
+                        <a class="login_register_a" href="javascript:void(0)" onclick="location.reload()">已有账号？请登录</a>
+                    </form>
+                </div>
+                <!-- 注册结束 -->
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./scripts/libs/jquery.js"></script>
+<script src="./scripts/login.js"></script>
+</html>

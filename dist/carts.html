@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美的购物车</title>
+    <link rel="stylesheet" href="./stylesheets/carts.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <!-- nav start -->
+    <div class="nav">
+            <div class="logo left">
+                <a href="./index.html"></a>
+            </div>
+            <div class="nav_warp left">
+                <li class="item left"><a href="./index.html">首页</a></li>
+                <li class="item left"><a href="./listPage.html">商品详情</a></li>
+                <li class="item left"><a href="./activity.html">活动页</a></li>
+                <li class="item left"><a href="#">全屋家电购套</a></li>
+                <li class="item left"><a href="#">会员福利社</a></li>
+                <li class="item left"><a href="#">美居</a></li>
+            </div>
+            <div class="opt_warp right">
+                <li class="nav_search">
+                    <span href="#"><i></i></span>
+                    <input type="text" name="" id="search" placeholder="空调五月巨惠">
+                    <i></i>
+                </li>
+                <li class="nav_phone">
+                    <a href="#"><i></i></a>
+                    <div><img src="./images/header_qr_all.png" alt=""></div>
+                    
+                </li>
+                <li class="nav_carts">
+                    <a href="#"><i></i></a>
+                    <div class="carts">
+                            <div></div>
+                        <p>购物车还没有商品，赶紧选购吧！</p>
+                    </div>
+                    <div class="hasCarts">
+                        <ul class="common_cart_list js_common_cart_list">
+                            <!-- <li class="common_cart_item">
+                                <div class="product_img left">
+                                    <img src="https://pic.midea.cn/ImageStore/110598/pic/b9eb4c220f6c03f6A9923/b9eb4c220f6c03f6A9923_120*120.jpg">
+                                </div>
+                                <div class="product_info left">
+                                    <div class="product_title">
+                                        <a target="_blank" href="/detail/index?itemid=1000000000100511206101">
+                                            空调大1.5匹定速挂机 智能冷暖壁挂式 KFR-35GW/WDAD3@ </a>
+                                    </div>
+                                    <div class="product_sku">
+                                        白色 </div>
+                                </div>
+                                <div class="cart_operation right">
+                                    <span class="cart_price">¥2299.00</span>
+                                    <span class="operation_delete js_common_cart_delete" data-id="206101">删除</span>
+                                </div>
+                            </li> -->
+                        </ul>
+                        <div id="look_carts">
+                            <a class="to_cart" href="./carts.html">
+                                查看购物车
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav_longin">
+                    <a class="denglu" href="./login.html"><i></i><span>登录</span></a>
+                    <div class="login_DownMenu">
+                        <a class="myOrder" href="#"><i></i><span>我的订单</span></a>
+                        <a class="myCoupon" href="#"><i></i><span>我的优惠券</span></a>
+                        <a class="memberBenefits" href="#"><i></i><span>会员福利社</span></a>
+                        <a class="myEquity" href="#"><i></i><span>我的权益</span></a>
+                        <a class="myMeidi" href="#"><i></i><span>我的美的</span></a>
+                        <a class="accountSettings" href="#"><i></i><span>账户设置</span></a>
+                        <a class="out_login" href="#"><i></i><span>退出登录</span></a>
+                    </div>
+                </li>
+            </div>
+        </div>
+        <div class="inform">
+                【通知】1.2019年4月1日起发货的订单，发票税率由16%变更为13%;2.新疆区域由于交通管制无法正常发货，恢复时间待定
+        </div>
+        <!-- nav end -->
+
+        <!-- address start -->
+
+        <div class="cart_top">
+            <div class="cart_top_inner">
+                    <h2 class="cart_title">
+                            购物车
+                    </h2>
+                    <div class="address_warp">
+                        <span class="address_hinter left">配送至 : </span>
+                        <div class="address_selected left">
+                            <span class="address_option address_selected_province ">北京市</span>
+                            <span class="address_option address_selected_city">北京市</span>
+                            <span class="address_option address_selected_area">朝阳区</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- address end-->
+
+        <div class="carts_body">
+
+            <ul class="cart_title_wrap">
+                <li class="cart_choose">
+                    <div class="js_all_choose item_choose_wrap" id="top_btn">
+                            <div class="item_choose js_sum_choose  yes"></div>
+                    </div>
+                    全选
+                </li>
+                <li class="cart_product">商品信息</li>
+                <li class="cart_sku">规格</li>
+                <li class="cart_price">单价(元)</li>
+                <li class="cart_num">数量</li>
+                <li class="cart_total">小计(元)</li>
+                <li class="cart_operation">操作</li>
+            </ul>
+        
+        </div>
+
+
+        <div class="gouwuche">
+            <div class="js_shop_100511">
+               <!-- <div class="item_detail">
+
+                    <div class="cart_choose">
+                        <div class="item_choose_wrap">
+                            <div class="item_choose  js_item_choose"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="item_sub_detail">
+                        <div class="cart_img">
+                            <img src="https://pic.midea.cn/ImageStore/157520/pic/90a274e4dcf0e0b7A629/90a274e4dcf0e0b7A629_120*120.jpg">
+                        </div>
+                        <div class="cart_product" title="大1P全直流变频空调 一级能效 冷暖挂机 智能操控 KFR-26GW/WXDN8A1@">
+                            <a target="_blank" href="/detail/index?itemid=1000000000100511235588">
+                                大1P全直流变频空调 一级能效 冷暖挂机 智能操控 KFR-26GW/WXDN8A1@ </a>
+                        </div>
+                        <div class="cart_sku">
+                            <span class="sku_color">极地白</span>
+                            <span class="sku_spec">大1匹</span>
+                        </div>
+                        <div class="cart_price">
+                            <span class="price_old">2999.00</span>
+                        </div>
+                        <div class="cart_num">
+                            <div class="num_wrap" id="divEditNum_235588" data-type="product" data-id="235588">
+                                <span class="minus"> <span class="inner"></span></span>
+                                <input class="num" type="text" pattern="\d{0,3}" data-type="product" value="1">
+                                <span class="plus"><span class="inner"></span></span>
+                                <div class="cart_product_status js_product_status_235588"></div>
+                            </div>
+                        </div>
+                        <div class="cart_total">2699.00</div>
+                        <div class="cart_operation">
+                            <span class="operation_delete js_item_delete" data-type="delete" data-id="235588"
+                                data-itemid="1000000000100511235588">删除</span>
+                        </div>
+                    </div>
+
+               </div>              -->
+            </div>
+        </div>
+
+
+
+        <!-- 固定底部结算栏 -->
+        <div class="cart_bottom_wrap">
+            <div class="cart_bottom">
+                <div class="cart_sum_left">
+                    <div class="cart_sum_choose">
+                        <div class="js_all_choose item_choose_wrap " id="btn_all">
+                            <div class="item_choose yes b_btn"></div>
+                        </div>
+                        全选
+                    </div>
+                    <div class="cart_sum_delete js_sum_delete" data-type="delete" id="all_delete">删除</div>
+                    <div class="cart_sum_collect js_sum_delete" data-type="collect">移入收藏夹</div>
+                    <div class="cart_sum_invalid js_sum_invalid">清除失效商品</div>
+                </div>
+                <div class="cart_sum_right">
+                    <div class="cart_sum_num">已选商品<span class="color_f60 js_total_check">3</span>款</div>
+                    <div class="cart_sum_price">
+                        <div class="total_price">
+                            合计：
+                            <span class="total_price_inner">
+                                <span class="js_total_price">¥7997.00</span>
+                            </span>
+                        </div>
+                        <div class="cut_price">
+                            (不含运费)
+                        </div>
+                    </div>
+                    <div class="cart_sum_to_order">去结算</div>
+                </div>
+            </div>
+        </div>
+    <!-- 邀请用户购物 -->
+    <div class="cart_empty">
+        <div class="icon_cart"></div>
+        <div class="hinter">您的购物车还是空的，去看看心仪的商品吧~</div>
+        <div class="cart_btn">
+            <a href="./listPage.html">去购物</a>
+            <a href="./listPage.html">去收藏夹</a>
+        </div>
+    </div>
+</body>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/carts.js"></script> 
+</html>

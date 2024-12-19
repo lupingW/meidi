@@ -1,0 +1,210 @@
+@import'../_commont/reset.scss';
+
+body{
+    background: #f4f4f4;
+}
+
+.main_warp{
+    width: 100%;
+    
+}
+
+.cate_cells{
+    background-color: #fff;
+    font-size: 12px;
+    border: 1px solid #eee;
+    color: #333;
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.cate_cells .cate_cell{
+    padding: 10px 24px;
+    width: 1152px;
+    overflow: hidden;
+    border-top:1px solid #eee;
+}
+
+.cate_cells .cate_bar{
+    background: #fcfcfc;
+}
+
+.cate_cells .cate_bar>div,.col_10>div{
+    
+    width: 100%;
+    height: 21px;
+    
+}
+
+.cate_cells .cate_bar>div>a{
+   
+    color: #333;
+    height: 21px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.cate_cells .cate_bar>div>a:hover{
+    color: #0093d5;
+}
+
+.cate_cells .cate_bar>div>i{
+    vertical-align: top;
+    width: 12px;
+    height: 15px;
+   display: inline-block;
+    margin: 4px 10px 4px 12px;
+    background: url(../images/22222.png) -30px -30px;
+}
+
+.col_10>div>span{
+    display: block;
+    width: 120px;
+    height: 21px;
+    line-height: 21px;
+    float: left;
+    color: #999;
+}
+
+.col_10>div>a{
+    float: left;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 50px;
+    color: #333;
+}
+
+.col_10>div>a:hover{
+    color: #f60;
+}
+
+.map_list{
+    padding:10px 24px; 
+    background-color: #fff;
+    font-size: 12px;
+    border: 1px solid #eee;
+    color: #333;
+    width: 1152px;
+    margin:16px  auto;
+    border: 1px solid #eee;
+}
+
+.map_list>div{
+    background-color: #fff;
+    font-size: 12px;    
+    color: #333;
+    height: 22px;
+}
+
+.map_list .bbbb>div{
+    line-height:22px; 
+    float: left;
+    margin-right: 38px;
+    position: relative;
+    cursor:pointer;
+}
+
+.map_list .bbbb .tuijian{  color: #0093d5; }
+
+.map_list .bbbb .price>i{
+    width: 10px;
+    height: 9px;
+    margin: 0 8px;
+    background: url(../images/22222.png) 0 -42px;
+    display: inline-block;
+}
+
+.map_list .bbbb .price>ul{
+    position: absolute;
+    left: -30px;
+    top: 22px;
+    background: #fff;
+    z-index: 20;
+    padding: 14px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+    width: 100px;
+    display: none;
+
+}
+
+.map_list .bbbb .price>ul>li{
+    margin: 5px auto;
+    text-align: center;
+    cursor:pointer;
+}
+
+.map_list .bbbb .price>ul>li:hover{
+    color: #f60;
+}
+
+
+// 地区插件样式
+.map_list .bbbb .address> .form-group{
+    float: left;
+}
+
+#province1,#city1,#district1{
+    border: none;
+    outline: none;
+    width: 90px;   
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+}
+
+.form-control{
+    width: auto;
+    text-align: center;
+    text-align-last: center;
+}
+
+.form-group>i{
+    width: 10px;
+    height: 9px;
+    margin: 0 8px;
+    background: url(../images/22222.png) 0 -42px;
+    display: inline-block;
+}
+
+
+// 地区插件样式结束
+
+.map_list .bbbb .js_mod_filter_item{
+    float: right;
+    vertical-align: top;
+}
+
+.map_list .bbbb .js_mod_filter_item>i{
+    vertical-align: top;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/22222.png) no-repeat -263px -100px;
+    margin-top: 2px;
+}
+
+.map_list .bbbb .js_mod_filter_item:hover{
+    color: #f60;
+}
+
+.map_list .bbbb .js_mod_filter_item>i.active{
+    background: url(../images/22222.png) no-repeat -242px -100px;
+}
+
+html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;}
+
+
+
+
+
+
+.jingubang{
+    height: 3000px;
+    width: 400px;
+}

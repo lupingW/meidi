@@ -1,0 +1,1053 @@
+// 此页面样式包括侧边栏  轮播图   轮播i图下面的四个分类
+
+
+.container{
+    width: 100%;
+    height: 680px;
+}
+.banner_main{
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+
+
+
+// banner图主体
+.banner{
+    width: 1200px;
+    height: 480px;
+    overflow: hidden;
+  
+    position: relative;
+}
+.banner>ul{
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 20;
+}
+.banner>ul>img{
+    display: block;
+    width: 1200px;
+    height:100% ;
+    float: left;
+}
+.prev_btn{
+    position: absolute;
+    z-index: 22;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    top: 210px;
+    left: 220px;
+    background: url(../images/index_sprite.png) -170px -59px;
+    display: none;
+}
+.prev_btn:hover{
+    background: url(../images/index_sprite.png) -171px -124px;
+}
+.next_btn{
+    display: none;
+    position: absolute;
+    z-index: 22;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    top: 210px;
+    right: 0;
+    background: url(../images/index_sprite.png) -233px -59px;
+}
+.next_btn:hover{
+    background: url(../images/index_sprite.png) -234px -124px;
+}
+.tab_ctrl{
+    position: absolute;
+    height: 36px;
+    overflow: hidden;
+    left: 220px;
+    bottom: 0;
+    z-index: 22;
+    width: 980px;
+    text-align: center;
+}
+.tab_ctrl>div{
+    padding: 0 8px;
+    min-width: 110px;   
+    margin: 0 auto; 
+    display: inline-block;
+}
+.tab_ctrl>div>span{
+    float: left;
+    display: block;
+    margin: 10px 4px 10px 3px;
+    background-color: #D0CECE;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.tab_ctrl>div>span:hover{
+    background: #fff;
+    box-shadow: 0 0 5px #fff;
+}
+//sidebar 侧边栏主体
+.sidebar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 555;
+    background: rgba(0,0,0,.6);
+    height: 448px;
+    width: 220px;
+    padding: 16px 0;
+}
+
+.sidebar>li{
+    width: 148px;
+    height: 56px;
+    position: relative;
+    padding-left: 72px;
+    
+}
+
+.sidebar>li>i{
+    position: absolute;
+    left: 21px;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    background-image: url(//img.mdcdn.cn/pc/img/mall/index_sprite.png?t=201701032);
+    background-repeat: no-repeat;
+}
+
+.midea_refrigerator>i{
+    background-position: -30px 0;
+}
+
+.midea_washer>i{
+    background-position: -60px 0;
+}
+
+.midea_small_kitchen>i{
+    background-position: -90px 0;
+}
+
+.midea_big_kitchen>i{
+    background-position: -120px 0;
+}
+
+.midea_home>i{
+    background-position: -150px 0;
+}
+
+.midea_water_heater>i{
+    background-position: -180px 0;
+}
+
+.midea_parts>i{
+    background-position: -210px 0;
+}
+
+.sidebar>li>a> .cat_name{
+    color: #ffffff;
+    line-height: 56px;
+    margin-right: 10px;
+}
+
+.sidebar>li>a> .cat_des{
+    color:#f0f0f0;;
+    opacity: .5;
+}
+
+.sidebar>li>span{
+    vertical-align: -2px;
+    margin-left: 2px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -999em;
+    background-position: -69px -188px;
+    background-image: url(../images/index_sprite.png);
+}
+
+.sidebar>li>div{
+    position: absolute;
+    left: 220px;  
+    z-index: 666;
+    width: 660px;
+    background: #fff;
+}
+// 侧边栏---空调
+.sidebar_item1{display: none;}
+.sidebar_item1_left>ul{
+    padding: 24px 0 0 16px;
+    
+}
+
+.sidebar_item1_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item1_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item1_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item1_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item1_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item1_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item1_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item1_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item1_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item1_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item1_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+    
+}
+
+.sidebar_item1_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item1_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item1_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item1_right>ul:hover a{
+    color: #f10
+}
+
+//侧边栏---冰箱
+
+.sidebar_item2{display: none;}
+.sidebar_item2_left>ul{
+    padding: 24px 0 0 16px;
+    
+}
+
+.sidebar_item2_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item2_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item2_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item2_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item2_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item2_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item2_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item2_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item2_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item2_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item2_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item2_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item2_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item2_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item2_right>ul:hover a{
+    color: #f10
+}
+
+// 侧边栏----洗衣机
+
+
+.sidebar_item3_left>ul{
+    padding: 24px 0 0 16px;
+    
+}
+
+.sidebar_item3_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item3_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item3_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item3_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item3_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item3_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item3_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item3_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item3_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item3_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item3_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item3_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item3_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item3_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item3_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item3{display: none;}
+//侧边栏---厨房小电
+.midea_small_kitchen .sidebar_item4{
+    width: 920px;
+}
+.sidebar_item4_left{
+    width: 480px;
+}
+.sidebar_item4_left>ul{
+    padding: 24px 0 0 16px;
+    float: left;
+}
+
+.sidebar_item4_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item4_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item4_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item4_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item4_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item4_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item4_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item4_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item4_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item4_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item4_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item4_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item4_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item4_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item4_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item4{display: none;}
+//侧边栏---厨房大电
+.sidebar_item5_left>ul{
+    padding: 24px 0 0 16px;
+    
+}
+
+.sidebar_item5_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item5_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item5_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item5_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item5_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item5_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item5_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item5_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item5_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item5_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item5_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item5_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item5_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item5_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item5_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item5{display: none;}
+
+//侧边栏---生活家电
+.midea_home .sidebar_item6{
+    width: 920px;
+}
+.sidebar_item6_left{
+    width: 480px;
+}
+.sidebar_item6_left>ul{
+    padding: 24px 0 0 16px;
+    float: left;
+}
+
+.sidebar_item6_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item6_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item6_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item6_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item6_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item6_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item6_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item6_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item6_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item6_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item6_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item6_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item6_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item6_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item6_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item6{display: none;}
+//侧边栏---热水器/净水器
+.sidebar_item7_left>ul{
+    padding: 24px 0 0 16px;
+    
+}
+
+.sidebar_item7_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item7_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item7_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item7_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item7_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item7_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item7_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item7_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item7_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item7_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item7_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item7_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item7_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item7_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item7_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item7{display: none;}
+// 配件及周边
+.midea_parts .sidebar_item8{
+    width: 920px;
+}
+.sidebar_item8_left{
+    width: 480px;
+}
+.sidebar_item8_left>ul{
+    padding: 24px 0 0 16px;
+    float: left;
+}
+
+.sidebar_item8_left>ul>li{
+    width: 204px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.sidebar_item8_left>ul>li>a{
+    display: inline-block;
+    color: #333;
+    line-height: 32px;
+}
+
+.sidebar_item8_left>ul>li>a:hover{
+    color:#f10 ;
+}
+
+.sidebar_item8_left>ul>li>a>img{
+    margin-right: 16px;
+}
+
+//中间部分
+.sidebar_item8_center{
+    width: 220px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.sidebar_item8_center>ul>li>a{
+    padding: 20px 0;
+    height: 80px;
+    display: inline-block;
+    color: #333;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.sidebar_item8_center>ul>li>a>img{
+    margin-left: 12px;
+    float: left;
+    vertical-align: middle;
+}
+
+.sidebar_item8_center>ul>li>a>span{
+    padding: 0 9px;
+}
+
+.sidebar .goods_list{
+    margin-top: 18px;
+    display: block;
+    *padding-top: 16px;
+    max-height: 34px;
+    *max-height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.sidebar_item8_center>ul>li>a:hover{
+    color: #f10;
+}
+
+//右边部分
+.sidebar_item8_right{
+    width: 220px;
+    height: 480px;
+}
+
+.sidebar_item8_right>ul{
+    padding: 28px 50px;
+    box-sizing: border-box;
+    width: 220px;
+    height: 240px;
+}
+
+.sidebar_item8_right>ul img{
+    width: 120px;
+    height: 120px;
+}
+
+.sidebar_item8_right>ul .t{
+    font-size: 14px;
+    margin-top: 22px;
+    text-align: center;
+    color:#333;
+}
+
+.sidebar_item8_right>ul .b{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar_item8_right>ul:hover a{
+    color: #f10
+}
+.sidebar_item8{display: none;}
+// subnav 4个分类主体
+.subnav{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    border-top:none; 
+    background: #fff;
+  
+}
+.subnav>a{
+    display: block;
+    height: 100%;
+    width: 300px;
+    float: left;   
+    box-sizing: border-box; 
+    border-right: 1px solid #e0e0e0;
+
+}
+.subnav>a>img{
+    display: block;
+    width: 200px;
+    height: 180px;
+    margin: 15px auto 5px;
+    transition: all .2s ease-in;
+}
+.subnav>a:hover img{
+    margin: 10px auto 5px;
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer"/>
+    <title>美的制造</title>
+    <link rel="stylesheet" href="./stylesheets/commodityDetails.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <!-- nav start -->
+    
+        <div class="nav">
+                <div class="logo left">
+                    <a href="./index.html"></a>
+                </div>
+                <div class="nav_warp left">
+                    <li class="item left"><a href="./index.html">首页</a></li>
+                    <li class="item left"><a href="./listPage.html">商品列表</a></li>
+                    <li class="item left"><a href="./activity.html">活动页</a></li>
+                    <li class="item left"><a href="#">全屋家电购套</a></li>
+                    <li class="item left"><a href="#">会员福利社</a></li>
+                    <li class="item left"><a href="#">美居</a></li>
+
+                </div>
+                <div class="opt_warp right">
+                    <li class="nav_search">
+                        <span href="#"><i></i></span>
+                        <input type="text" name="" id="search" placeholder="空调五月巨惠">
+                        <i></i>
+                    </li>
+                    <li class="nav_phone">
+                        <a href="#"><i></i></a>
+                        <div><img src="./images/header_qr_all.png" alt=""></div>
+                        
+                    </li>
+                    <li class="nav_carts">
+                        <a href="./carts.html"><i></i></a>
+                        <div class="carts">
+                                <div></div>
+                            <p>购物车还没有商品，赶紧选购吧！</p>
+                        </div>
+                        <div class="hasCarts">
+                            <ul class="common_cart_list js_common_cart_list">
+                                <!-- <li class="common_cart_item">
+                                    <div class="product_img left">
+                                        <img src="https://pic.midea.cn/ImageStore/110598/pic/b9eb4c220f6c03f6A9923/b9eb4c220f6c03f6A9923_120*120.jpg">
+                                    </div>
+                                    <div class="product_info left">
+                                        <div class="product_title">
+                                            <a target="_blank" href="/detail/index?itemid=1000000000100511206101">
+                                                空调大1.5匹定速挂机 智能冷暖壁挂式 KFR-35GW/WDAD3@ </a>
+                                        </div>
+                                        <div class="product_sku">
+                                            白色 </div>
+                                    </div>
+                                    <div class="cart_operation right">
+                                        <span class="cart_price">¥2299.00</span>
+                                        <span class="operation_delete js_common_cart_delete" data-id="206101">删除</span>
+                                    </div>
+                                </li> -->
+                            </ul>
+                            <div id="look_carts">
+                                <a class="to_cart" href="./carts.html">
+                                    查看购物车
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav_longin">
+                        <a class="denglu" href="./login.html"><i></i><span>登录</span></a>
+                        <div class="login_DownMenu">
+                            <a class="myOrder" href="#"><i></i><span>我的订单</span></a>
+                            <a class="myCoupon" href="#"><i></i><span>我的优惠券</span></a>
+                            <a class="memberBenefits" href="#"><i></i><span>会员福利社</span></a>
+                            <a class="myEquity" href="#"><i></i><span>我的权益</span></a>
+                            <a class="myMeidi" href="#"><i></i><span>我的美的</span></a>
+                            <a class="accountSettings" href="#"><i></i><span>账户设置</span></a>
+                            <a class="out_login" href="#"><i></i><span>退出登录</span></a>
+                        </div>
+                    </li>
+                </div>
+        </div>
+        <div class="inform">
+                【通知】1.2019年4月1日起发货的订单，发票税率由16%变更为13%;2.新疆区域由于交通管制无法正常发货，恢复时间待定
+        </div>
+
+    <!--nav end  -->
+     
+    <div class="crumb_warp">
+        <div class="crumb">
+            <a href="./index.html">首页</a>
+            <span>  </span>
+            <a href="./listPage.html">空调</a>
+            <span>  </span>
+            <a href="javascript:void(0)">KFR-35GW/WDBN8A3@</a>
+        </div>
+    </div>
+
+    <!-- 放大镜部分 start -->
+    <div class="product_warp_main">
+        <div class="product_warp">
+            <!-- 放大镜  -->
+            <div class="product_left">
+                <!-- 大的放大镜 -->
+                <div class="zoom_pic" >
+                    
+                    <img id="zoomPic" alt="大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@" src="./images/b1.JPG" style="left: -234.96px; top: -698.4px;">
+                   
+                </div>
+                <!-- 小的放大镜 -->
+                <div class="showcase">
+                    <div class="detail_pic" id="detailPic" ></div>
+                    <img id="showcase" class="showcase_inner" src="./images/t1.JPG" alt="大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@">           
+                </div>
+                <!-- 选项卡 -->
+                <ul id="thumbnails" class="thumbnails">
+                    <li class="cur">
+                        <img id="pxx_img" src="./images/s1.jpg" alt="" index="1" data-t="./images/t1.JPG" data-b = "./images/b1.JPG">
+                        <!-- <img src="" alt="" id="pxx_img"> -->
+                    </li>
+                    <li>
+                        <img src="./images/s2.jpg" alt="" index="2" data-t="./images/t2.JPG" data-b = "./images/b2.JPG">
+                    </li>
+                    <li>
+                        <img src="./images/s3.jpg" alt="" index="3" data-t="./images/t3.JPG" data-b = "./images/b3.JPG">
+                    </li>
+                    <li>
+                        <img src="./images/s4.jpg" alt="" index="4" data-t="./images/t4.JPG" data-b = "./images/b4.JPG">                        
+                    </li>
+                    <li>
+                        <img src="./images/s5.jpg" alt="" index="5" data-t="./images/t5.JPG" data-b = "./images/b5.JPG">
+                    </li>
+                </ul>
+
+                <div class="share_collect">
+
+                    <!--S 分享组合-->
+                    <div class="share_kits left">
+                        <span class="share_title left">分享到</span>
+                        <div class="bdsharebuttonbox share_wrap left" id="share_1">
+                            <a class="bds_tqq icon icon_qq" rel="nofollow" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.midea.cn%2Fdetail%2Findex%3Fitemid%3D1000000000100511234895&amp;title=大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@&amp;desc=大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@"></a>
+                            <a class="bds_weixin icon icon_wx" rel="nofollow" id="wxShare" href="javascript:void(0);"></a>
+                        </div>
+                    </div>
+                    <!--S 收藏组合-->
+                    <div class="collect_wrap left">
+                        <i class="icon icon_collect" id="btnCollect" mtag="30007.11.2"></i>
+                        <span class="collect_text" id="textCollect">收藏</span>
+                        <span class="js_toggle_contrast" data-cate-id="30" data-sku="1000000000100511234895">
+                            <i class="icon icon_contrast" id="" mtag=""></i>
+                            <span class="collect_text" id="">对比</span>
+                        </span>
+                    </div>
+        
+                </div>
+
+            </div>
+            <!-- 商品介绍 -->
+            <div class="product_right">
+                <h1>
+                    <span class="self_product">自营</span>
+                    大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@            
+                </h1>
+
+                <h5>
+                    <span class="item_price_protect" title="支付成功至发货后3天内，若商品发生降价，您可以在个人中心申请补差价。">极速保价</span>
+                    智能wifi；ECO节能；百档风速；智能睡眠；               
+                </h5>
+
+                <div class="floor_price_act">
+                    <div class="price_act_inner">
+                        <div class="price_wrap">
+                            <span class="new_price">
+                                <span class="currency_symbol">¥</span>
+                                <b class="price">2499.00</b>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floor_coupon_comment">
+                    <div class="inner_floor floor_onsale js_no_promote">
+                        <h3>优惠</h3>
+                        <div class="floor_list">
+                            <div class="option option_act">
+                                <span class="icon_act">送积分</span>
+                                <span class="text_act">最高送249积分</span>
+                            </div>
+                            <div class="switch_promo js_switch_promo" style="display: none;">共<span class="num">1</span>项优惠<i
+                                    class="icon_switch"></i></div>
+                        </div>
+                    </div>
+                
+                    <!-- 领券：普通和预售商详支持领券-->
+                    <div class="inner_floor floor_coupon  ">
+                        <h3>领券</h3>
+                        <div class="floor_list js_coupon_list">
+                            <div class="option option_coupon coupon_1">
+                                <div class="coupon_left">
+                                    <i class="coupon_icon"></i>
+                                    <span class="text">满0减30</span>
+                                </div>
+                                <div class="coupon_right J_get_coupon" mtag="30007.3.1" data-click="0" obtain_state="1"
+                                    obtain_id="72630284873527">
+                                    <span class="text">
+                                        领取 </span>
+                                    <i class="coupon_icon coupon_icon_right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coupon_show coupon_show_height J_show_coupon hide"></div>
+                    </div>
+                
+                    <div class="inner_floor floor_comment J_floor_comment">
+                        <h3>评价</h3>
+                        <div class="floor_list">
+                            <span class="option">满意(421)</span>
+                            <span class="option">师傅服务周(414)</span>
+                            <span class="option">安装师傅很(319)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--商品颜色  -->
+                <div class="goods_color">
+                    <h3>颜色</h3>
+                    <div class="sku_list">
+                        <span class="option option_selected">
+                            <img src="./images/s1.jpg" alt="" width="36" height="36">
+                            极地白
+                        </span>
+                    </div>
+                </div>
+                <!-- 商品数量 -->
+                <div class="goods_count">
+                    <h3>数量</h3>
+                    <div class="num_wrap">
+                        <span id="minus">
+                            <span class="inner"></span>
+                        </span>
+
+                        <input type="text" id="num" value="1">
+
+                        <span id="plus">
+                                <span class="inner"></span>
+                        </span>
+
+                        <div class="stock_quota">
+                                <div class="stock_status">库存
+                                        81                                    
+                                </div>
+                                <div class="quota_status">（限购5件）</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 地址 -->
+                <div class="address">
+                    <h3>配送</h3>
+                    <span>北京 至 <i>北京市 朝阳区</i> 有货</span>
+                    <div>
+                            17:00前付款，预计05月23日送达                                                        
+                    </div>
+                </div>
+                 <!-- 花呗分期 -->
+                 <div class="huabei">
+                     <h3>花呗分期</h3>
+                     <div>该商品支持分期支付</div>
+                     <ul>
+                         <li>¥852.16*3期（含手续费）</li>
+                         <li>¥435.24*6期（含手续费）</li>
+                         <li>¥223.87*12期（含手续费）</li>
+                     </ul>
+                 </div>
+                <!-- 供货商 -->
+                <div class="superlier">
+                    <h3>供货商</h3>
+                    <span>美的官网商城</span>
+                </div>
+               <!-- 购物btn -->
+               <div class="floor_btn">
+                   <a href="javascript:void(0)" id = "btn_cart">加入购物车</a>
+                   <a href="javascript:void(0)" id = "primary_btn">立即购买</a>
+               </div>
+               <!-- 全国联保 -->
+               <div class="floor_service">
+                   <div class="service_inner">
+                        <span class="service_icon">
+
+                        </span>
+                        <span class="service_option">
+                                美的唯一官方商城
+                        </span>
+                   </div>
+                   <div class="service_inner">
+                        <span class="service_icon">
+                               
+                        </span>
+                        <span class="service_option">
+                                全国联保
+                        </span>
+                   </div>
+                   <div class="service_inner">
+                        <span class="service_icon">
+                            
+                        </span>
+                        <span class="service_option">
+                                全场包邮
+                        </span>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- 放大镜部分 end -->
+
+    <!-- 为你推荐 start -->
+     <div class="recommend_package_wrap recommend_only">
+        <div class="recommend_nav">为你推荐</div>
+        <div class="recommend_list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/229.jpg" alt="" class="pro_img">
+                        <span class="pro_name">【欧式自清洗】烟灶套装  18m³大吸力 宽屏拢烟 4.1kw猛火 T39+Q216B</span>
+                        <span class="pro_price">
+                             ￥2399.00
+                        </span>
+                        <div class="cuxiao">
+                                520大促
+                        </div>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#">
+                        <img src="./images/215.jpg" alt="" class="pro_img">
+                        <span class="pro_name">【侧吸自清洗】烟灶套装 升级19m³大吸力 高压自动洗 4.5KW火力 J119s+Q39</span>
+                        <span class="pro_price">
+                                ￥2499.00
+                        </span>
+                        <div class="cuxiao">
+                                520大促
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/215.jpg" alt="" class="pro_img">
+                        <span class="pro_name">【免安装】洗碗机 29分钟超快洗 健康水果洗 消毒烘干 4套餐具 M1-香槟金</span>
+                        <span class="pro_price">
+                                ￥1899.00
+                        </span>
+                        <div class="cuxiao">
+                                520大促
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/217.jpg" alt="" class="pro_img">
+                        <span class="pro_name">【嵌入式】洗碗机  8套餐具 智能感应油污 3.0热风烘干 少量餐具节能洗 X3-T</span>
+                        <span class="pro_price">
+                                ￥3399.00
+                        </span>
+                        <div class="cuxiao">
+                                520大促
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./images/218.jpg" alt="" class="pro_img">
+                        <span class="pro_name">随行杯 小巧便携 移动充电 350ML容量 USB充放两用 MJ-LZ15Easy209</span>
+                        <span class="pro_price">
+                                ￥139.00
+                        </span>
+                        <div class="cuxiao">
+                            520大促
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+     </div>   
+
+    <!-- 为你推荐 end -->
+
+    <!-- 吸顶介绍 start -->
+     <div class="tabs_nav_wrap ">
+         <div class="tabs_nav_inner_wrap">
+             <div class="tabs_nav_border_wrap">
+                 
+                <div class="tabs_nav_left left">
+                     <img src="./images/s2.jpg" alt="" width="55" height="55">
+                     <div class="tabs_product">
+                        <div class="product_name">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</div>
+                        <div class="product_price">￥2499.00</div>
+                     </div>
+                 </div>
+
+                 <div class="tabs_nav_right">
+                     <a id="btnFixBuy" href="javascript:void(0)">
+                         <div id="primary_btn2">
+                             立即购买
+                         </div>
+                     </a>
+                 </div>
+
+                 <div class="tabs_nav_center">
+                     <li class="cur">产品介绍</li>
+                     <li>
+                         评价
+                         <span>(345)</span>
+                     </li>
+                     <li>规格参数</li>
+                     <li>服务支持</li>
+                     <li>相关问题</li>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <!-- 吸顶介绍 end -->
+    <!-- 商品介绍 start -->
+
+     <div class="tabs_content_wrap">
+        <div class="style_wrap_790">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/220.jpg" alt="" width="790" height="296">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/221.jpg" alt="" width="790" height="1221">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/209.jpg" alt="" width="790" height="912">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/223.jpg" alt="" width="790" height="1247">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/245.jpg" alt="" width="790" height="1249">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/248.jpg" alt="" width="790" height="1222">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/224.jpg" alt="" width="790" height="971">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/235.jpg" alt="" width="790" height="1202">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/236.jpg" alt="" width="790" height="767">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/237.jpg" alt="" width="790" height="1158">
+            <img class="img_list" src="./images/0 (100).jpg" data-src="./images/238.jpg" alt="" width="790" height="1482">
+            <div class="marking_price_wrap">
+                <p class="marking_price__title">划线价格</p>
+                <p class="marking_price__content">指商品专柜价、吊牌价、正品零售价、厂商指导价或该商品的曾经展示过的销售价等，并非原价，仅供參考。</p>
+                <p class="marking_price__title">未划线价格</p>
+                <p class="marking_price__content">指商品的实时标价，不因表述的差异改变性质。具体成交价格根据商品参加活动，或会员使用优惠券、积分等发生变化，最终以订单结算页价格为准。</p>
+                <p class="marking_price__content">商家详情页（含主图）以图片成文字形式标注的一口价、促销价、优惠价等价格可能是在使用优惠券、满减或特定优惠活动和时段等情形下的价格.具体请以结算页面的标价、优惠条件或活动规则为准。</p>
+                <p class="marking_price__content">此说明仅当出现价格比较时有效，如有疑问，您可在购买前联系客服进行咨询。</p>
+            </div>
+        </div>
+     </div>
+
+     <!-- 商品介绍 end -->
+     <!-- footer start -->
+     <div class="footer_main">
+        <div class="footer">
+            <div class="footLinkWarp">
+                <a href="#">商城入驻</a>
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">联系我们</a>
+                <a href="#">帮助中心</a>
+                <a href="#">服务支持</a>
+            </div>
+        
+            <p class="copyright">
+                Copyright © 1968-2019 广东美的网络科技有限公司
+                <a href="#"> 粤ICP备17058257号</a>
+                <img src="./images/27 (1).JPG" alt="">
+                <a href="#">粤公网安备 44060602000546号</a>
+                <img src="./images/27 (2).JPG" alt="">
+                <a href="#">粤工商备P06811806002512</a>
+            </p>
+        </div>
+    </div>
+    <!-- footer end -->
+    <!-- 固定的侧边栏 start-->
+
+    <div class="fixd_detail">
+        <div class="item">
+            <a target="_blank" onclick="window.open('https://css.midea.cn/mp/online_customer_service/pc_message?channel_key=1400','_blank','height=600,width=800,top=0,left=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no');return false;" href="javascript:">
+                <i class="detail_sprite detail_sprite_detail_floating_qq"></i>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="/service/index?mtag=30007.14.2">
+                    <i class="detail_sprite detail_sprite_detail_floating_info"></i>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:void(0)">
+                <i class="detail_sprite detail_sprite_detail_floating_wxcode"></i>
+            </a>
+        </div>
+        <div class="item">
+                <a href="javascript:void(0)">
+                    <i class="detail_sprite detail_sprite_detail_floating_top"></i>
+                </a>
+        </div>
+        <div id="floating_wxcode_content" >
+            <span class="triangle"></span>
+            <img src="./images/213.jpg" alt="美的商城微信服务号">
+        </div>
+    </div>
+
+    <!-- 固定的侧边栏 end -->
+    <!-- 遮罩层  start-->
+    <div class="zhezhaoceng">
+
+    </div>
+    <div class="mod_layer">
+        <div class="mod_layer_hd"><i class="close_ico" data-mpopup-close=""></i></div>
+
+        <div class="mod_layer_bd">
+            <i class="suc_ico"></i>
+            <p class="prompt_txt J_get_status">添加成功！</p>
+        </div>
+
+        <div class="mod_layer_ft">
+            <a href="javascript:void(0)" class="layer_btn J_close_text" data-mpopup-close="">继续购物</a>
+            <a class="layer_btn J_get_href" data-mpopup-confirm="" href="./carts.html">去结算</a>
+        </div>
+    </div>
+    <!-- 遮罩层 end-->
+
+</body>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/commodityDetails.js"></script>
+</html>

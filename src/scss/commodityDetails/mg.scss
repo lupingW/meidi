@@ -1,0 +1,174 @@
+.product_warp_main{
+    width: 100%;
+    overflow: hidden;
+}
+
+.product_warp{
+    margin: 40px auto 60px auto;
+    width: 1190px;
+}
+
+.product_warp::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.product_left{
+    float: left;
+    padding-left: 85px;
+    position: relative;
+    width: 595px;
+    height: 632px;
+  
+}
+
+.product_left .zoom_pic{
+    position: absolute;
+    overflow: hidden;
+    left: 595px;
+    height: 500px;
+    width: 500px;
+    z-index: 99;
+    background-color: #fff;
+}
+
+
+.detail_pic{
+    width:209px;
+    height:209px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px #000;
+    display:none;
+}
+
+#showcase{
+    height: 500px;
+    width: 500px;   
+}
+
+#thumbnails{
+    clear: right;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+#thumbnails>li{
+    float: left;
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+    opacity: 0.4;
+    margin: 1px 10px 1px 1px;
+    width: 60px;
+    height: 60px;
+}
+
+#thumbnails>li.cur{
+    border: 2px solid #f60;
+}
+
+#thumbnails>li>img{
+    width: 60px;
+    height: 60px;
+}
+
+.share_collect{
+    clear: right;
+    overflow: hidden;
+    padding-left: 50px;
+    margin-top: 20px;
+    height: 18px;
+}
+
+.share_kits>span{
+    color:#333;
+    line-height:18px;
+}
+
+#share_1>.bds_tqq{
+    margin: 0 0 0 10px;
+    width: 18px;
+    background: url(../images/qq.png) no-repeat;
+    background-position: -20px -66px;
+    display: inline-block;
+    height: 18px;
+}
+
+.bds_weixin{
+    margin: 0 0 0 10px;
+    width: 22px;
+    background: url(../images/qq.png) no-repeat;
+    background-position: -36px -66px;
+    display: inline-block;
+    height: 18px;
+}
+
+.collect_wrap{
+    margin-left: 20px;
+    border-left: 1px solid #e6e6e6;
+    clear: right;
+    overflow: hidden;
+}
+
+#btnCollect{
+    background: url(../images/qq.png);
+    margin-left: 20px;
+    cursor: pointer;
+    background-position: -40px -90px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align:middle;
+}
+
+#btnCollect:hover{
+    background-position: -60px -90px;
+}
+
+#textCollect{
+    margin-left: 6px;
+    color: #333;
+    line-height: 18px;
+    vertical-align:middle;
+}
+
+.icon_contrast{
+    background: url(../images/qq.png);
+    background-position: -100px -126px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align:middle;
+}
+
+.collect_text{
+    margin-left: 6px;
+    color: #333;
+    line-height: 18px;
+    vertical-align:middle;
+}
+
+.zoom_pic{
+    display: none;
+}
+
+.detail_pic{
+
+    background-color: #0080dc;
+    opacity: .2;
+
+}
+.showcase{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
